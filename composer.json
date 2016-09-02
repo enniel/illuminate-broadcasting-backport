@@ -1,0 +1,44 @@
+{
+    "name": "enniel/illuminate-broadcasting-backport",
+    "description": "Backport of the Laravel 5.3 Broadcasting System for Laravel 5.1 and 5.2.",
+    "license": "MIT",
+    "homepage": "https://github.com/enniel/illuminate-broadcasting-backport",
+    "authors": [
+        {
+            "name": "Taylor Otwell",
+            "email": "taylor@laravel.com"
+        },
+        {
+            "name": "Evgeni Razumov",
+            "email": "razumov.evgeni@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/contracts": "5.1.*",
+        "illuminate/support": "5.1.*"
+    },
+    "require-dev": {
+        "mockery/mockery": "~0.9.4",
+        "phpunit/phpunit": "~4.0"
+    },
+    "replace": {
+        "illuminate/broadcasting": "5.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Illuminate\\Broadcasting\\": "src/Broadcasting",
+            "Illuminate\\Contracts\\Broadcasting\\": "src/Contracts",
+            "Illuminate\\Support\\Facades\\": "src/Facades"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "5.1-dev"
+        }
+    },
+    "suggest": {
+        "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (~2.0)."
+    },
+    "minimum-stability": "dev"
+}
