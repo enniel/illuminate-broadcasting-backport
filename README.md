@@ -7,7 +7,13 @@ This package acts as a backport for the Laravel 5.3 broadcasting system, to allo
 You can install the package via composer:
 
 ```bash
-composer require enniel/illuminate-broadcasting-backport
+composer require enniel/illuminate-broadcasting-backport:5.1.x-dev
+```
+
+For version 5.2:
+
+```bash
+composer require enniel/illuminate-broadcasting-backport:5.2.x-dev
 ```
 
 Next, you must load the service provider:
