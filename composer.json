@@ -23,7 +23,7 @@
         "phpunit/phpunit": "~4.0"
     },
     "replace": {
-        "illuminate/broadcasting": "5.2.*"
+        "illuminate/broadcasting": "self.version"
     },
     "autoload": {
         "psr-4": {
